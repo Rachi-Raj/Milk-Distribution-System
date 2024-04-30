@@ -20,6 +20,15 @@ struct Customer {
     char customerHouseAddress[MAX_ADDRESS_LENGTH];
 };
 
+enum menuChoiceNames{
+    add_New_Customer=1,
+    display_Customer_Details=2,
+    update_Customer_Details=3,
+    update_Delivery_Status=4,
+    delete_Customer=5,
+    exit_=6
+};
+
 struct Customer* customers = NULL;
 int numberOfCustomers = 0;
 

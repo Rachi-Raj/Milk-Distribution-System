@@ -21,24 +21,24 @@ int main() {
         scanf("%d", &choice);
 
         switch (choice) {
-        case 1:
+        case add_New_Customer:
             addNewCustomer();
             // printf("%d",customers);
             break;
-        case 2:
+        case display_Customer_Details:
             displayCustomerDetails();
             break;
-        case 3:
+        case update_Customer_Details:
             updateCustomerDetails();
             break;
-        case 4:
+        case update_Delivery_Status:
             updateDeliveryStatus();
             break;
-        case 5:
+        case delete_Customer:
             deleteCustomer();
             break;
 
-        case 6:
+        case exit_:
             if (numberOfCustomers > 0) {
                 free(customers); // Free allocated memory before exiting
             }
